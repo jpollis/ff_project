@@ -1,3 +1,17 @@
 // Place all the styles related to the SmartHire controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  text-align: center;
+  margin-top: 0.5em;
+}
+
+.container {
+  margin-top: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  padding-left: 25em;
+}

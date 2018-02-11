@@ -1,18 +1,29 @@
 <h1>SmartHire</h1>
 <!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
-<%= form_tag main_path do %>
-Location
-<%= text_field_tag :location %> <br>
-Job Search
-<%= text_field_tag :job_search %> <br>
-<%= submit_tag "search" %>
-<% end %>
-<p>location </p>
+<div class="container">
+  <div class="row">
+    <!-- <div class="col"> -->
+      <%= form_tag main_path do %>
+      <!-- Location -->
+      <%= text_field_tag :location %> <br>
+    <!-- </div> -->
+    <!-- <div class="col"> -->
+      <!-- Job Title -->
+      <%= text_field_tag :job_search %> <br>
+    <!-- </div> -->
+    <!-- <div class="col"> -->
+      <%= submit_tag "search"%>
+      <% end %>
+    <!-- </div> -->
+  </div>
+</div>
+
+
 
 <% if @jobs.present? %>
 <% i = 0 %>
 <% @jobs.each do |link| %>
-<ol>
+<ol class="jobs">
   <li><%= @a[i] %></li>
   <li><%= @b[i] %></li>
   <li><%= @c[i] %></li>
