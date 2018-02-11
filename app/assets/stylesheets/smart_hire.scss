@@ -1,17 +1,75 @@
 // Place all the styles related to the SmartHire controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
+// h1 {
+//   text-align: center;
+//   margin-top: 0.5em;
+// }
+
+// .container {
+//   margin-top: 2em;
+//   text-align: center;
+//   width: 100%;
+// }
+
+// .row {
+//   padding-left: 25em;
+// }
+.title{
+  position: relative;
   text-align: center;
-  margin-top: 0.5em;
+}
+ul{
+  // overflow-y: hidden;
+  list-style-type: none;
+  border:solid;
+  margin-top:5em;
+  color:white;
+  background-color:black;
+  opacity:.9;
+  -webkit-overflow-scrolling:touch;
+}
+li{
+  margin-top:5px;
 }
 
-.container {
-  margin-top: 2em;
-  text-align: center;
+.freeze_panel{
+  border:solid;
+  position: fixed;
   width: 100%;
+  background-color: black;
+  color: white;
+  opacity:1;
+}
+.location_search{
+  position:relative;
+  float:left;
+  left: 86%;
+
+}
+.job_search{
+  position:relative;
+  float:right;
+  left: 87%;
 }
 
-.row {
-  padding-left: 25em;
+.search_button{
+
+  position: absolute;
+  left: 65%;
+}
+.results{
+  position: absolute;
+  width: 100%;
+  top: 16%;
+}
+body{
+  opacity:.65;
+  background-size:cover;
+  background-image:url("smarthire_picture2.jpg");
+  // position:fixed;
+
+  background-position:fixed;
+  background-repeat:no-repeat;
+  overflow:hidden;
 }

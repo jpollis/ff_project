@@ -1,36 +1,42 @@
-<h1>SmartHire</h1>
-<!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
-<div class="container">
-  <div class="row">
-    <!-- <div class="col"> -->
-      <%= form_tag main_path do %>
-      <!-- Location -->
-      <%= text_field_tag :location %> <br>
-    <!-- </div> -->
-    <!-- <div class="col"> -->
-      <!-- Job Title -->
-      <%= text_field_tag :job_search %> <br>
-    <!-- </div> -->
-    <!-- <div class="col"> -->
-      <%= submit_tag "search"%>
-      <% end %>
-    <!-- </div> -->
+<div class="freeze_panel">
+  <h1 class="title">SmartHire</h1>
+  <!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col"> -->
+        <%= form_tag main_path do %>
+        <!-- Location -->
+      <p class="location_search"><%= text_field_tag :location %> <br></p>
+      <!-- </div> -->
+      <!-- <div class="col"> -->
+        <!-- Job Title -->
+      <p class="job_search"><%= text_field_tag :job_search %> <br></p>
+      <!-- </div> -->
+      <!-- <div class="col"> -->
+      <p class="search_button">  <%= submit_tag "search"%></p>
+        <% end %>
+      <!-- </div> -->
+    </div>
   </div>
 </div>
+<div class="image">
+  <!-- <img src="smarthire_picture2.jpg"></img> -->
+</div>
 
+<div class="results">
 
+  <% if @jobs.present? %>
+  <% i = 0 %>
+  <% @jobs.each do |link| %>
+  <ul class="jobs">
+    <li><b>Job Title</b><br><%= @a[i] %></li>
+    <li><b>Description</b><br><%= @b[i] %></li>
+    <li><b>Company</b><br><%= @c[i] %></li>
+    <li><b>Linkedin Page</b><br><%= @d[i] %></li>
+    <li><b>Glassdoor Page</b><br><%= @e[i] %></li>
+  </ul>
 
-<% if @jobs.present? %>
-<% i = 0 %>
-<% @jobs.each do |link| %>
-<ol class="jobs">
-  <li><%= @a[i] %></li>
-  <li><%= @b[i] %></li>
-  <li><%= @c[i] %></li>
-  <li><%= @d[i] %></li>
-  <li><%= @e[i] %></li>
-</ol>
-
-<% i += 1 %>
-<% end %>
-<% end %>
+  <% i += 1 %>
+  <% end %>
+  <% end %>
+</div>
