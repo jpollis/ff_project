@@ -64,12 +64,18 @@ li{
   top: 16%;
 }
 body{
-  opacity:.65;
-  background-size:cover;
+  // opacity:.65;
+  // background-size:cover;
   background-image:url("smarthire_picture2.jpg");
-  // position:fixed;
-
-  background-position:fixed;
-  background-repeat:no-repeat;
-  overflow:hidden;
+  //  position:relative;
+  //
+  // background-position:fixed;
+  // background-repeat:no-repeat;
+  // overflow:hidden;
+   position:relative;
+   opacity:0.65;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
