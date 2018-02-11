@@ -1,0 +1,25 @@
+<h1>SmartHire</h1>
+<!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
+<%= form_tag main_path do %>
+Location
+<%= text_field_tag :location %> <br>
+Job Search
+<%= text_field_tag :job_search %> <br>
+<%= submit_tag "search" %>
+<% end %>
+<p>location </p>
+
+<% if @jobs.present? %>
+<% i = 0 %>
+<% @jobs.each do |link| %>
+<ol>
+  <li><%= @a[i] %></li>
+  <li><%= @b[i] %></li>
+  <li><%= @c[i] %></li>
+  <li><%= @d[i] %></li>
+  <li><%= @e[i] %></li>
+</ol>
+
+<% i += 1 %>
+<% end %>
+<% end %>
