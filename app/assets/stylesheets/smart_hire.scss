@@ -44,7 +44,7 @@ li{
   background-color: steelblue;
   color: white;
   z-index:10;
-  // opacity:.65;
+  opacity:.65;
 
 
 }
@@ -73,6 +73,32 @@ margin-left: 3em;
 //   position: absolute;
 //   left: 71%;
 // }
+.user_buttons{
+
+  position: absolute;
+  bottom: 16%;
+  right: 6%;
+  display: flex;
+
+}
+.sign_up{
+  border: solid;
+  position: relative;
+  text-align:center;
+  color:white;
+  background-color: white;
+  width: 80px;
+  height: 36px;
+}
+.log_in{
+  border: solid;
+  position: relative;
+  color:white;
+  background-color: white;
+  margin-left: 17px;
+  width: 80px;
+  height: 36px;
+}
 .row{
   right: 23%;
   position: relative;

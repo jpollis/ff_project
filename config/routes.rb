@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get '/' => "smart_hire#index", as: "main"
   post '/' => "smart_hire#index", as: "main_post"
 
