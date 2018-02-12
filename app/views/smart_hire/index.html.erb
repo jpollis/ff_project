@@ -1,42 +1,45 @@
 <div class="freeze_panel">
-  <h1 class="title">SmartHire</h1>
-  <!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
-  <div class="container">
-    <div class="row">
-      <!-- <div class="col"> -->
-        <%= form_tag main_path do %>
-        <!-- Location -->
-      <p class="location_search"><%= text_field_tag :location %> <br></p>
-      <!-- </div> -->
-      <!-- <div class="col"> -->
-        <!-- Job Title -->
-      <p class="job_search"><%= text_field_tag :job_search %> <br></p>
-      <!-- </div> -->
-      <!-- <div class="col"> -->
-      <p class="search_button">  <%= submit_tag "search"%></p>
-        <% end %>
-      <!-- </div> -->
-    </div>
-  </div>
+
+
+ <!-- <i class="fas fa-graduation-cap"></i> -->
+ <h1 class="title">SmartHire</h1>
+ <!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
+ <div class="container">
+   <div class="row">
+     <!-- <div class="col"> -->
+       <%= form_tag main_path do %>
+       <!-- Location -->
+     <p class="location_search"><%= text_field_tag :location %> <br></p>
+     <!-- </div> -->
+     <!-- <div class="col"> -->
+       <!-- Job Title -->
+     <p class="job_search"><%= text_field_tag :job_search %> <br></p>
+     <!-- </div> -->
+     <!-- <div class="col"> -->
+     <p class="search_button">  <%= submit_tag "search"%></p>
+       <% end %>
+     <!-- </div> -->
+   </div>
+ </div>
 </div>
 <div class="image">
-  <!-- <img src="smarthire_picture2.jpg"></img> -->
+ <!-- <img src="smarthire_picture2.jpg"></img> -->
 </div>
 
 <div class="results">
 
-  <% if @jobs.present? %>
-  <% i = 0 %>
-  <% @jobs.each do |link| %>
-  <ul class="jobs">
-    <li><b>Job Title</b><br><%= @a[i] %></li>
-    <li><b>Description</b><br><%= @b[i] %></li>
-    <li><b>Company</b><br><%= @c[i] %></li>
-    <li><%= link_to 'Linkedin Page', @d[i] %></li>
-    <li><%= link_to 'Glassdoor Page', @e[i] %></li>
-  </ul>
+ <% if @jobs.present? %>
+ <% i = 0 %>
+ <% @jobs.each do |link| %>
+ <ul class="jobs">
+   <li class="job_title"><%= @a[i] %></li>
+   <li><b>Description</b><br><%= @b[i] %></li>
+   <li><b>Company</b><br><%= @c[i] %></li>
+   <li><b>Linkedin Page</b><br><%= @d[i] %></li>
+   <li><b>Glassdoor Page</b><br><%= @e[i] %></li>
+ </ul>
 
-  <% i += 1 %>
-  <% end %>
-  <% end %>
+ <% i += 1 %>
+ <% end %>
+ <% end %>
 </div>
