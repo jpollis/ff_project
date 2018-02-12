@@ -1,4 +1,7 @@
 <div class="freeze_panel">
+
+
+  <i class="fas fa-graduation-cap"></i>
   <h1 class="title">SmartHire</h1>
   <!-- <input type="text">Job title/keywords <% @user_seach %></p> -->
   <div class="container">
@@ -29,7 +32,7 @@
   <% i = 0 %>
   <% @jobs.each do |link| %>
   <ul class="jobs">
-    <li><b>Job Title</b><br><%= @a[i] %></li>
+    <li class="job_title"><%= @a[i] %></li>
     <li><b>Description</b><br><%= @b[i] %></li>
     <li><b>Company</b><br><%= @c[i] %></li>
     <li><b>Linkedin Page</b><br><%= @d[i] %></li>
