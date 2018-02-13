@@ -53,11 +53,22 @@ li{
  float:left;
  left: 86%;
 }
+
+// #location {
+//   text-align: center;
+//   color: gray;
+// }
+
 .job_search{
  position:relative;
  float:right;
  left: 87%;
 }
+
+// #job_search {
+//   text-align: center;
+//   color: gray;
+// }
 
 .search_button{
 margin-left: 3em;
@@ -79,6 +90,10 @@ margin-left: 3em;
   right: 6%;
   display: flex;
 
+}
+
+a {
+  color: white;
 }
 .sign_up{
   border: solid;

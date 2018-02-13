@@ -2,21 +2,27 @@
 // All this logic will automatically be available in application.js.
 
 $(function() {
- let $jobbtn = $('#job_search');
- $jobbtn.val("Job Title/Keyword").css({opacity: 0.5});
-
-
+ // let $jobbtn = $('#job_search');
+ // $jobbtn.val("Job Title/Keyword");
 
  $jobbtn.click(function() {
-   $jobbtn.val("").css({opacity: 1.0});
+   $jobbtn.val("");
  })
 
- let $locbtn = $('#location');
- $locbtn.val("City/State").css({opacity: 0.5});
+ // $jobbtn.keypress(function() {
+ //   $jobbtn.css({opacity: 1.0});
+ // })
+ // 
+ // let $locbtn = $('#location');
+ // $locbtn.val("City/State");
 
- $locbtn.click(function() {
-   $locbtn.val("").css({opacity: 1.0});
+ $locbtn.on('click', function() {
+   $locbtn.val("").css({color: black});
  })
+
+ // $locbtn.keypress(function() {
+ //   $locbtn.css({opacity: 1.0});
+ // })
 
  let $result = $('.results');
   let $deleteMsg = $('.delete');
