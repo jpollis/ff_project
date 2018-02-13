@@ -43,8 +43,8 @@
     <li class="job_title"><%= @a[i] %></li>
     <li><b>Description</b><br><%= @b[i] %></li>
     <li><b>Company</b><br><%= @c[i] %></li>
-    <li><%= link_to 'LinkedIn Page', @d[i] %></li>
-    <li><%= link_to 'Glassdoor Page', @e[i] %></li>
+    <li><%= link_to 'LinkedIn Page', @d[i], target: :_blank %></li>
+    <li><%= link_to 'Glassdoor Page', @e[i], target: :_blank %></li>
   </ul>
 
  <% i += 1 %>
