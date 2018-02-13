@@ -24,25 +24,14 @@
   </div>
   <div class="user_buttons">
     <div class="sign_up">
-      <%= link_to "Sign Up", new_user_registration_path, { :class=>"btn primary" } %>
+      <%= link_to "Sign Up", new_user_registration_path %>
     </div>
     <div class="log_in">
-      <%= link_to "Log In", new_user_session_path, { :class=>"btn secondary" } %>
+      <%= link_to "Log In", new_user_session_path %>
     </div>
   </div>
 
 </div>
-<!-- <ul>
-        <div class="btn-group">
-          <% if user_signed_in? %>
-          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn primary" %></li>
-            <li><%= link_to "Upload", new_picture_path, { :class=>"btn primary" } %></li>
-          <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path, { :class=>"btn primary" } %></li>
-          <li><%= link_to "Log In", new_user_session_path, { :class=>"btn secondary" } %></li>
-          <% end %>
-        </ul> -->
-
 
 <div class="results">
 
@@ -50,6 +39,7 @@
   <% i = 0 %>
   <% @jobs.each do |link| %>
   <ul class="jobs">
+    <a class="delete">Delete</a>
     <li class="job_title"><%= @a[i] %></li>
     <li><b>Description</b><br><%= @b[i] %></li>
     <li><b>Company</b><br><%= @c[i] %></li>
