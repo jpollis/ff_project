@@ -35,11 +35,11 @@
   <% @jobs.each do |link| %>
   <ul class="jobs">
     <a class="delete">Delete</a>
-    <li class="job_title"><%= @a[i] %></li>
-    <li><b>Description</b><br><%= @b[i] %></li>
-    <li><b>Company</b><br><%= @c[i] %></li>
-    <li class="linkedin"><%= link_to 'LinkedIn Page', @d[i], target: :_blank %></li>
-    <li class="glassdoor"><%= link_to 'Glassdoor Page', @e[i], target: :_blank %></li>
+    <li class="job_title"><%= @job_title[i] %></li>
+    <li><b>Description</b><br><%= @job_summary[i] %></li>
+    <li><b>Company</b><br><%= @company_name[i] %></li>
+    <li class="linkedin"><%= link_to 'LinkedIn Page', @linkedin_link[i], target: :_blank %></li>
+    <li class="glassdoor"><%= link_to 'Glassdoor Page', @glassdoor_link[i], target: :_blank %></li>
   </ul>
 
  <% i += 1 %>

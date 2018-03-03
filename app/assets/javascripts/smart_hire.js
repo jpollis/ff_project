@@ -3,7 +3,7 @@
 
 $(function() {
 
- let $result = $('.results');
+  let $result = $('.results');
   let $deleteMsg = $('.delete');
   $deleteMsg.on('click', function(){
     let $job = $('.jobs');
